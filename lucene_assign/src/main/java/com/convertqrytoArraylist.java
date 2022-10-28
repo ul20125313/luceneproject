@@ -13,7 +13,7 @@ public class convertqrytoArraylist
 
     public ArrayList<HashMap<String, String>> getArraylist() throws IOException
     {
-        FileInputStream file = new FileInputStream("./cran.qry");
+        FileInputStream file = new FileInputStream("../cran.qry");
         InputStreamReader reader = new InputStreamReader(file);
         BufferedReader bufferedReader = new BufferedReader(reader);
         String line = "";

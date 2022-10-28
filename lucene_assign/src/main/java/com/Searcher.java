@@ -41,7 +41,7 @@ public class Searcher {
         //The first parameter is analyzer, the second parameter is
         QueryParser queryp = new QueryParser("description",analyzer);
 
-        Directory dir = FSDirectory.open(Paths.get("./index"));
+        Directory dir = FSDirectory.open(Paths.get("../index"));
         //create the inputstream object
         IndexReader reader = DirectoryReader.open(dir);
 
@@ -116,7 +116,7 @@ public class Searcher {
         QueryParser queryp = new QueryParser("description",analyzer);
         Query query = queryp.parse("what similarity laws must be obeyed when constructing aeroelastic models\n" +
                 "of heated high speed aircraft.");
-        Directory dir = FSDirectory.open(Paths.get("./index"));
+        Directory dir = FSDirectory.open(Paths.get("../index"));
         //create the inputstream object
         IndexReader reader = DirectoryReader.open(dir);
         IndexSearcher searcher = new IndexSearcher(reader);

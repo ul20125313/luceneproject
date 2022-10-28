@@ -53,7 +53,7 @@ public class TestIndexManager {
         //create the directory object, the index will be this directory
         //Fsdirectory is abstract class, so I can make a new intance of it.
 
-        Directory dir = FSDirectory.open(Paths.get("./index"));
+        Directory dir = FSDirectory.open(Paths.get("../index"));
         IndexWriterConfig config = new IndexWriterConfig(analyzer);
         IndexWriter indexwriter = new IndexWriter(dir, config);
         //write the documents to the index Directory

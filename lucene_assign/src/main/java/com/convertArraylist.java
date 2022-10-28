@@ -8,7 +8,7 @@ public class convertArraylist {
     public ArrayList<HashMap<String,String>> getArraylist() throws IOException
     {
 
-        String filePath = "./cran1400";
+        String filePath = "../cran1400";
         File fi = new File(filePath);
         System.out.println(fi.exists());
         FileInputStream file = new FileInputStream(fi);
