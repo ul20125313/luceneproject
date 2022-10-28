@@ -18,8 +18,8 @@ public class Main
         tm.createIndex();
 
 //there is something wrong with the qrel file, so I create this method to add a column to qrel file.
-        modifyCranqrel mc = new modifyCranqrel();
-        mc.modify();
+        //modifyCranqrel mc = new modifyCranqrel();
+        //mc.modify();
 
         System.out.println("Please select the type of Similarity:\n"+
                 "1---BM25Similarity()\n"+
