@@ -62,7 +62,7 @@ public class Searcher {
             IndexSearcher searcher = new IndexSearcher(reader);
             setSimilarity(searcher);
 
-            TopDocs top = searcher.search(query,5);
+            TopDocs top = searcher.search(query,20);
             ScoreDoc[] scoreDocs = top.scoreDocs;
             if(scoreDocs!= null)
             {
