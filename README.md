@@ -1,6 +1,7 @@
 # luceneproject
 Before running this project, make sure that you have the java and maven.
 commands:
+sudo su -
 cd luceneproject
 cd lucene_assign
 make package
